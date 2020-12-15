@@ -102,11 +102,11 @@ function toIcon() {
                 iconEl.querySelectorAll('circle').forEach(circle => circle.style.fill = `#${icon.getAttribute('color') || 424242}`);
                 iconEl.querySelectorAll('rect').forEach(rect => rect.style.fill = `#${icon.getAttribute('color') || 424242}`);
                 iconEl.style.width = icon.getAttribute('width') || 15+'px'
-                iconEl.style.height = icon.getAttribute('width') || 15+'px'
+                iconEl.style.height = icon.getAttribute('height') || 15+'px'
 
                 icon.style.color = `#${icon.getAttribute('color') || 424242}`;
                 icon.style.width = icon.getAttribute('width') + 'px' || 15+'px'
-                icon.style.height = icon.getAttribute('width') + 'px' || 15+'px'
+                icon.style.height = icon.getAttribute('height') + 'px' || 15+'px'
     
                 icon.appendChild(iconEl);
             }
