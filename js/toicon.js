@@ -100,6 +100,7 @@ function toIcon() {
                 iconEl.style.fill = `#${icon.getAttribute('color') || 424242}`;
                 iconEl.querySelectorAll('path').forEach(path => path.style.fill = `#${icon.getAttribute('color') || 424242}`);
                 iconEl.querySelectorAll('circle').forEach(circle => circle.style.fill = `#${icon.getAttribute('color') || 424242}`);
+                iconEl.querySelectorAll('rect').forEach(rect => rect.style.fill = `#${icon.getAttribute('color') || 424242}`);
                 iconEl.style.width = icon.getAttribute('width') || 15+'px'
                 iconEl.style.height = icon.getAttribute('width') || 15+'px'
 
